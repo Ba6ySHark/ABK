@@ -9,25 +9,77 @@
 </head>
 
 <body>
-    <!-- Header starts here -->
+    <!-- Header begins here -->
     <header>
-        <img src="/images/alt-logo.png">
+        <a href="#home"><img src="/images/alt-logo.png"></a>
         <ul id="menu">
-            <li>О Нас</li>
-            <li>Услуги</li>
-            <li>Преимущества</li>
-            <li>Стоимость</li>
+            <li><a href="#about">О Нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#price">Стоимость</a></li>
         </ul>
     </header> <!-- Header ends here -->
 
-    <!-- Home section starts here -->
+    <!-- Home section begins here -->
     <section id="home">
-        
+        <div id="home-info">
+            <div>
+                <ul>
+                    <li><div></div></li>
+                    <li><h2>ДЛЯ МАЛОГО, СРЕДНЕГО И КРУПНОГО БИЗНЕСА</h2></li>
+                </ul>
+                <h1><span>A</span>налитика <span>Б</span>изнес <span>К</span>онсалтинг</h1>
+                <h3>Спасёт мир от обязательств!</h3>
+                <button>Попробовать</button>
+            </div>
+        </div>
     </section> <!-- Home section ends here -->
 
-    <section id="home"></section>
+    <!-- About section begins here -->
+    <section id="about">
+        <div id="about-info">
+            <img src="/images/pink-calculator.jpeg">
+            <h1><span>А</span>налитика <span>Б</span>изнес <span>К</span>онсалтинг</h1>
+            <ul>
+                <li>Специализированная организация по ведению бухгалтерского, налогового, кадрового, управленческого учета</li>
+                <li>Лидер в области аттестации работников финансово-экономических служб</li>
+            </ul>
+            <h2>Мы гарантируем:</h2>
+            <ul>
+                <li>Высокое качество работы</li>
+                <li>Оперативность</li>
+                <li>Конфедициальность</li>
+                <li>Индивидуальный подход</li>
+            </ul>
+        </div>
+    </section> <!-- About section ends here -->
 
+    <!-- Additional information section begins here -->
+    <section id="additional-info">
+        <div id="first-div">
+            <p>Вкладываясь в бухгалтерские услуги, вы инвестируете в <strong style="color: #e09a21">успех своего
+                бизнеса</strong>. Поэтому предлагаем вам оставить себе то, что вас
+                вдохновляет, развивать свой бизнес, а нам позволить заниматься
+                любимым делом.</p>
+        </div>
+        <div id="second-div">
+            <div class="item"><img src="/icons/terms.png"><h1>Условия</h1></div>
+            <div class="description">Все услуги предоставляются удобным для Вас способом. Удаленно или лично в офисе.</div>
+            <div class="item"><img src="/icons/handshake.png"><h1>Признание</h1></div>
+            <div class="description">Сотрудники организации являются профессиональными
+                бухгалтерами.
+                Организация имеет большой опыт работы в компаниях с
+                обязательным аудитом, штатом сотрудников более 300 чел.,
+                имеющих филиалы и оборотом 500+ млн рублей в год.</div>
+        </div>
+    </section>
+
+    <!-- JavaScript files -->
     <script src="/scripts/nav-bar-sticky.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

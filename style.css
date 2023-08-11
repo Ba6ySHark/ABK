@@ -1,4 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    background-color: #fff;
     font-family: consolas;
     font-size: 62.5%;
     margin: 0;
@@ -10,7 +15,6 @@ header {
     display: flex;
     width: 100%;
     height: 9vh;
-    color: azure;
     background-color: transparent;
     transition: 0.6s;
     justify-content: space-between;
@@ -19,7 +23,6 @@ header {
 }
 
 header.sticky {
-    color: #004b88;
     background-color: azure;
     height: 7vh;
 }
@@ -36,11 +39,227 @@ header ul {
     margin: 0 2rem;
 }
 
+header ul li a {
+    color: azure;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #004b88;
+}
+/* Header ends here */
+
+/* Home page starts here */
 #home {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
     background-image: url(/images/fluid-background.svg);
     background-size: 100% 100vh;
+    /* background-position: center; */
     background-repeat: no-repeat;
 }
+
+#home-info {
+    width: 50%;
+    height: 100%;
+}
+
+#home-info div {
+    position: relative;
+    width: 75%;
+    top: 35%;
+    margin: 0 auto;
+}
+
+#home-info ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#home-info ul li div {
+    content: " ";
+    display: block;
+    height: 3px;
+    width: 50px;
+    top: 50%;
+    left: 0;
+    border: 0;
+    background: steelblue;
+}
+
+#home-info h1 {
+    margin-top: 0;
+    font-size: 3em;
+    color: steelblue;
+}
+
+#home-info h1 span {
+    font-size: 1.2em;
+    color:rgb(10, 67, 114);
+}
+
+#home-info h2 {
+    font-size: 1.7em;
+}
+
+#home-info h3 {
+    font-size: 2.5em;
+    color: #e09a21;
+}
+
+#home-info button {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 25px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border-color: #004b88;
+    border-style: solid;
+    background-color: #004b88;
+    transition: 0.4s;
+}
+
+#home-info button:hover {
+    color: #004b88;
+    background-color: #fff;
+}
+/* Home page ends here */
+
+/* About section starts here */
+#about {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/about-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-info {
+    position: relative;
+    width: 70%;
+    /* height: 600px; */
+    top: 35%;
+    margin: 0 auto;
+}
+
+#about-info img {
+    width: 600px;
+    height: 320px;
+    float: right;
+    border-radius: 45px 0 45px 0;
+}
+
+#about-info h1 {
+    color: azure;
+    font-size: 3em;
+}
+
+#about-info h1 span {
+    color: #e09a21;
+    font-size: 1.2em;
+}
+
+#about-info h2 {
+    color: #e9b863;
+    font-size: 2.7em;
+}
+
+#about-info ul li {
+    color: azure;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 1520px) {
+    #about-info {
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #about-info {
+        width: 50%;
+    }
+
+    #about-info img {
+        display: none;
+    }
+}
+/* About section ends here */
+
+/* Additional info section begins here */
+#additional-info {
+    display: flex;
+    width: 100%;
+}
+
+#first-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 60vh;
+    background-image: url(/images/foam6.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#first-div p {
+    position: relative;
+    top: 35%;
+    margin: 0 auto;
+    width: 50%;
+    color: azure;
+    font-size: 1.7em;
+}
+
+#second-div {
+    display: block;
+    width: 50%;
+    padding-left: 100px;
+}
+
+.item {
+    display: flex;
+    gap: 3em;
+    padding-top: 75px;
+    align-items: center;
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+}
+
+.item h1 {
+    font-size: 2.3em;
+    color: #e09a21;
+}
+
+.description {
+    width: 75%;
+    font-size: 2em;
+    color: #004b88;
+}
+
+@media only screen and (max-width: 1200px) {
+    #additional-info p {
+        font-size: 1.5em;
+    }
+
+    .item {
+        padding-top: 50px;
+    }
+
+    .description {
+        width: 90%;
+        font-size: 1.5em;
+    }
+}
+
+/* Additional info section ends here */
